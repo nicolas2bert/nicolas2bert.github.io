@@ -1,8 +1,12 @@
+import { Container } from './ui-elements/Container';
+import Home from './Home';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
     <div>
-        Hello World!
+        <Container>
+            <Home/>
+        </Container>
     </div>,
     document.getElementById('app'));
