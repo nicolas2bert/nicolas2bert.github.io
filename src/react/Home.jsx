@@ -1,4 +1,5 @@
-import { Image, ImageContainer, ImageRow, ImagesContainer } from './ui-elements/Images';
+import * as E from './ui-elements/Experience';
+import { Image, ImageContainer, ImagesContainer } from './ui-elements/Images';
 import React, { useEffect, useState } from 'react';
 import data from '../json/images.json';
 
@@ -31,6 +32,7 @@ const Home = () => {
         const images = edges.map(e => {
             return {
                 source: e.node.thumbnail_resources[3].src,
+                href: e.node.shortcode,
             };
         });
         setImages(images);
@@ -45,14 +47,33 @@ const Home = () => {
         <div> Error </div>;
     }
 
-    return <ImagesContainer>
-        {
-            images.map((image, key) =>
-                <ImageContainer key={key}>
-                    <Image src={image.source}/>
-                </ImageContainer>)
-        }
-    </ImagesContainer>;
+    // replace './img/test.png' by { image.source }
+    return <div>
+        <E.Container>
+            <E.Row>
+                <E.Date> Oct 2017 - Present </E.Date>
+                <E.Description>
+                    Scality - Lead Software Engineer
+                </E.Description>
+            </E.Row>
+            <E.Row>
+                <E.Date> Oct 2017 - Present </E.Date>
+                <E.Description>
+                    Scality - Lead Software Engineer
+                </E.Description>
+            </E.Row>
+        </E.Container>
+        <ImagesContainer>
+            {
+                images.map((image, key) =>
+                    <ImageContainer key={key}>
+                        <a href={`https://www.instagram.com/p/${image.href}`} rel='noreferrer' target='_blank'>
+                            <Image alt='I am a picture' src={ image.source }/>
+                        </a>
+                    </ImageContainer>)
+            }
+        </ImagesContainer>
+    </div>;
 };
 
 export default Home;

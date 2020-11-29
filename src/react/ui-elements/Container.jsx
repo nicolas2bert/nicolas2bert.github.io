@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: blue;
     @media (min-width: 544px) {
         max-width: 576px;
     }
@@ -13,16 +12,16 @@ export const Container = styled.div`
 
     // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
-      max-width: 940px;.
+      max-width: 720px;
     }
 
     // Extra large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
-      max-width: 1140px;
+      max-width: 720px;
     }
 
-    padding-right: .9375rem;
-    padding-left: .9375rem;
+    /* padding-right: 10rem;
+    padding-left: 10rem; */
 
     margin-right: auto;
     margin-left: auto;
