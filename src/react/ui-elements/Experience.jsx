@@ -18,7 +18,7 @@ export const Row = styled.div`
 
 export const Date = styled.div`
     flex: 0 30%;
-    text-align: center;
+    text-align: left;
     &:after{
         border-radius: 50%;
         width: 9px;
@@ -35,6 +35,22 @@ export const Date = styled.div`
 `;
 
 export const Description = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     flex: 0 70%;
-    text-align: center;
+    text-align: left;
+    margin-left: 2rem;
+`;
+
+export const Role = styled.div`
+    flex: 0 50%;
+    color: #000;
+    padding-bottom: 0.25rem;
+    min-width: 200px;
+`;
+
+export const Location = styled.div`
+    flex: 0 50%;
+    min-width: 200px;
 `;

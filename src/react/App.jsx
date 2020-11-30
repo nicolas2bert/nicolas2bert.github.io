@@ -1,3 +1,4 @@
+import '../css/index.css';
 import { Container } from './ui-elements/Container';
 import Home from './Home';
 import React from 'react';

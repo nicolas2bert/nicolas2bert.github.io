@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background: #fff;
+	color: #777;
+	font: 16px source sans pro, arial, sans-serif;
+	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%
+}
+
+::-moz-selection {
+	background: #272727;
+	color: #fff
+}
+
+::selection {
+	background: #272727;
+	color: #fff
+}

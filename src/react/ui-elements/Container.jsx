@@ -26,3 +26,12 @@ export const Container = styled.div`
     margin-right: auto;
     margin-left: auto;
 `;
+
+export const H2 = styled.h2`
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: #777;
+    letter-spacing: .2rem;
+    padding-bottom: 1rem;
+`;

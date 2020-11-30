@@ -22,6 +22,8 @@ export const Image = styled.img`
     width: 300px;
     margin: 1rem;
     cursor: pointer;
+    border-radius: 5px;
+    box-shadow:0 3px 6px rgba(0,0,0,.16),0 3px 6px rgba(0,0,0,.23);
 
     @media (min-width: 544px) {
         width: 300px;
@@ -52,4 +54,9 @@ export const Image = styled.img`
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
     }
+`;
+
+export const Title = styled.div`
+    padding-top: 3rem;
+    text-align: center;
 `;
