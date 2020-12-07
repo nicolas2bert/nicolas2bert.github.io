@@ -1,7 +1,8 @@
 import * as E from './ui-elements/Experience';
+import * as T from './ui-elements/TopLayout';
+import { Container, H2 } from './ui-elements/Container';
 import { Image, ImageContainer, ImagesContainer, Title } from './ui-elements/Images';
 import React, { useEffect, useState } from 'react';
-import { H2 } from './ui-elements/Container';
 import data from '../json/images.json';
 
 const Home = () => {
@@ -50,42 +51,49 @@ const Home = () => {
 
     // replace './img/test.png' by { image.source }
     return <div>
-        <Title> <H2> experience </H2> </Title>
-        <E.Container>
-            <E.Row>
-                <E.Date> Feb 2020 – Present </E.Date>
-                <E.Description>
-                    <E.Role>
-                        Technical Lead
-                    </E.Role>
-                    <E.Location>
-                        Scality - New York, USA
-                    </E.Location>
-                </E.Description>
-            </E.Row>
-            <E.Row>
-                <E.Date> Jun 2016 – Present </E.Date>
-                <E.Description>
-                    <E.Role>
-                        Software Engineer
-                    </E.Role>
-                    <E.Location>
-                        Scality - San Francisco, USA
-                    </E.Location>
-                </E.Description>
-            </E.Row>
-        </E.Container>
-        <Title> <H2> about me </H2> </Title>
-        <ImagesContainer>
-            {
-                images.map((image, key) =>
-                    <ImageContainer key={key}>
-                        <a href={`https://www.instagram.com/p/${image.href}`} rel='noreferrer' target='_blank'>
-                            <Image alt='I am a picture' src={ image.source }/>
-                        </a>
-                    </ImageContainer>)
-            }
-        </ImagesContainer>
+        <T.Container>
+            <Title>
+                <H2> introduction </H2>
+            </Title>
+        </T.Container>
+        <Container>
+            <Title> <H2> experience </H2> </Title>
+            <E.Container>
+                <E.Row>
+                    <E.Date> Feb 2020 – Present </E.Date>
+                    <E.Description>
+                        <E.Role>
+                            Technical Lead
+                        </E.Role>
+                        <E.Location>
+                            Scality - New York, USA
+                        </E.Location>
+                    </E.Description>
+                </E.Row>
+                <E.Row>
+                    <E.Date> Jun 2016 – Present </E.Date>
+                    <E.Description>
+                        <E.Role>
+                            Software Engineer
+                        </E.Role>
+                        <E.Location>
+                            Scality - San Francisco, USA
+                        </E.Location>
+                    </E.Description>
+                </E.Row>
+            </E.Container>
+            <Title> <H2> about me </H2> </Title>
+            <ImagesContainer>
+                {
+                    images.map((image, key) =>
+                        <ImageContainer key={key}>
+                            <a href={`https://www.instagram.com/p/${image.href}`} rel='noreferrer' target='_blank'>
+                                <Image alt='I am a picture' src={ image.source }/>
+                            </a>
+                        </ImageContainer>)
+                }
+            </ImagesContainer>
+        </Container>
     </div>;
 };
 

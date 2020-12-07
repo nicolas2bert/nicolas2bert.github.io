@@ -45,8 +45,8 @@ export const Image = styled.img`
     }
 
     // gray out animation
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
     -webkit-transition: .3s ease-in-out;
     transition: .3s ease-in-out;
 

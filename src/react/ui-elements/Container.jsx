@@ -34,4 +34,5 @@ export const H2 = styled.h2`
     color: #777;
     letter-spacing: .2rem;
     padding-bottom: 1rem;
+    margin: 0;
 `;
