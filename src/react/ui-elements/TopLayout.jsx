@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-image: linear-gradient(black, black), url('./img/bg2.jpeg');
-
-    background-blend-mode: saturation;
+    background-image: url('./img/bg3.jpeg');
 
     background-repeat: no-repeat;
     background-position: center 100%;
@@ -14,6 +12,6 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
-    padding-top: 3rem;
+    padding-top: 7rem;
     padding-bottom: 1rem;
 `;
