@@ -14,6 +14,6 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.div`
-    text-align:center;
-    padding-top: 20%;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 `;

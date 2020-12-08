@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
     border-left: 1px solid #777;
     margin: 0 5%;
 `;
@@ -47,10 +46,8 @@ export const Role = styled.div`
     flex: 0 50%;
     color: #000;
     padding-bottom: 0.25rem;
-    min-width: 200px;
 `;
 
 export const Location = styled.div`
     flex: 0 50%;
-    min-width: 200px;
 `;

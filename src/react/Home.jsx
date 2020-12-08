@@ -1,6 +1,6 @@
 import * as E from './ui-elements/Experience';
 import * as T from './ui-elements/TopLayout';
-import { Container, H2 } from './ui-elements/Container';
+import { Container, H1, H2 } from './ui-elements/Container';
 import { Image, ImageContainer, ImagesContainer, Title } from './ui-elements/Images';
 import React, { useEffect, useState } from 'react';
 import data from '../json/images.json';
@@ -52,9 +52,15 @@ const Home = () => {
     // replace './img/test.png' by { image.source }
     return <div>
         <T.Container>
-            <Title>
-                <H2> introduction </H2>
-            </Title>
+            <Container>
+                <T.Title>
+                    <H2> introduction </H2>
+                </T.Title>
+                <H1> Hi! I am Nicolas Humbert. <br/>
+                    Software Engineer. <br/>
+                    Based in New York.
+                </H1>
+            </Container>
         </T.Container>
         <Container>
             <Title> <H2> experience </H2> </Title>

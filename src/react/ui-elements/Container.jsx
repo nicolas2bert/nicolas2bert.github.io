@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+    max-width: 90%;
+
     @media (min-width: 544px) {
-        max-width: 576px;
+        max-width: 500px;
     }
 
     // Medium devices (tablets, 768px and up)
@@ -35,4 +37,20 @@ export const H2 = styled.h2`
     letter-spacing: .2rem;
     padding-bottom: 1rem;
     margin: 0;
+`;
+
+export const H1 = styled.h1`
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 29px;
+    line-height: 40px;
+    color: #5F5F5F;
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+      font-size: 50px;
+      line-height: 62px;
+    }
 `;
